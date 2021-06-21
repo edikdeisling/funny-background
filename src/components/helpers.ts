@@ -91,7 +91,7 @@ function useFabricCanvas(canvasRef: Ref<HTMLCanvasElement | undefined>, size: Re
       }
 
       canvas.value = canvasRef.value && size.value && new fabric.StaticCanvas(canvasRef.value, {
-        ... size.value,
+        ...size.value,
         renderOnAddRemove: false,
         backgroundColor: '#fff',
       });

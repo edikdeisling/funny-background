@@ -3,15 +3,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import NetBackground from './components/NetBackground.vue'
+import { defineComponent } from 'vue';
+import NetBackground from './components/NetBackground.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    NetBackground
-  }
-})
+    NetBackground,
+  },
+});
 </script>
 
 <style>

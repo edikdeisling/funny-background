@@ -1,15 +1,18 @@
 <template>
-  <NetBackground />
+  <FabricNetBackground />
+  <!--  <CanvasKitNetBackground />-->
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import NetBackground from './components/NetBackground.vue';
+import CanvasKitNetBackground from './components/canvasKit/CanvasKitNetBackground.vue';
+import FabricNetBackground from './components/fabric/FabricNetBackground.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    NetBackground,
+    FabricNetBackground,
+    CanvasKitNetBackground,
   },
 });
 </script>
@@ -31,5 +34,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 </style>
